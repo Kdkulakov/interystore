@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+footer {
+    margin-top: -5px;
+}
+
 a {
     text-decoration: none;
 }
@@ -115,6 +119,10 @@ body {
     padding-right: 31px;
 }
 
+.button:hover {
+    background-color: aliceblue;
+}
+
 .header-text {
     margin-top: 283px;
 }
@@ -203,14 +211,25 @@ body {
     position: relative;
 }
 
+.fea-links a:hover {
+    border-bottom: 3px solid gray;
+}
+
 .fea-pd {
-    border: 1px solid #9c9c9c;
+
     background-color: #ffffff;
     opacity: 0.9;
     width: 270px;
     height: 270px;
 }
 
+.fea-pd:first-child {
+    border: 1px solid #9c9c9c;
+}
+
+.fea-pd img:hover {
+    outline: 1px solid gray;
+}
 
 .fea-pd-control-a {
     text-align: center;
@@ -301,6 +320,11 @@ body {
     width: 370px;
     height: 370px;
     margin-bottom: 15px;
+}
+
+.tren-pd:hover {
+    outline-color: aliceblue;
+    outline: 1px solid gray;
 }
 
 .tren-product {
@@ -433,4 +457,149 @@ body {
 
 .mobile {
     position: relative;
+}
+
+.footer-links {
+    background-color: #f7f7f7;
+    padding-left: 98px;
+    padding-right: 98px;
+    padding-top: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: 25%;
+    position: relative;
+}
+
+.col input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #d9dee1;
+    background-color: #ffffff;
+}
+
+.col a {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "Architect" */
+    letter-spacing: 0.7px;
+}
+
+.col a:hover {
+    border-bottom: 1px solid gray;
+}
+
+.col p {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 15px;
+    width: 80%;
+}
+
+.social-link {
+    width: 100%;
+    margin-top: 67px;
+    padding-bottom: 38px;
+    display: -webkit-inline-box;
+}
+
+.col-2 {}
+
+.col-3 {
+    width: 40%;
+    text-align: -webkit-center;
+}
+
+.col-3 a i {
+    width: 28px;
+    background-color: #6c6c6c;
+    border-radius: 50%;
+    height: 28px;
+    line-height: 30px;
+    color: white;
+}
+
+.col-3 a i:hover {
+
+    color: mediumorchid;
+}
+
+
+.block-header h3 {
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* Text style for "C, ontact" */
+    letter-spacing: 1.8px;
+}
+
+.copy {
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "©,  Copyri" */
+    letter-spacing: 0.6px;
+}
+
+.terms a {
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    /* Text style for "T, erms &" */
+    letter-spacing: 0.6px;
+}
+
+.terms a:hover {
+    border-bottom: 1px solid gray;
+
+}
+
+.w-w {
+    width: 100%;
+}
+
+.block-header {
+    height: 13px;
+    padding-bottom: 24px;
+}
+
+.link-w {
+    display: grid;
+}
+
+.fa-telegram-plane {
+    width: 21px;
+    height: 17px;
+    color: #6c6c6c;
+    font-family: icomoon;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.subcrib {
+    position: absolute;
+    margin-top: -37px;
+    right: 15px;
+}
+
+.fa-telegram-plane:hover {
+    color: aquamarine;
+    border: none;
 }
