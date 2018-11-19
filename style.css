@@ -298,7 +298,7 @@ body {
 .fea-big-text {
     position: absolute;
     padding-left: 5%;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .fea-big-text .slider-h3 {
@@ -397,9 +397,7 @@ body {
 }
 
 .ac-big {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    position: relative;
     min-width: 45%;
     background-image: url(img/product-1-lg.png);
     background-repeat: no-repeat;
@@ -784,6 +782,11 @@ body {
 
 .acc-big {
     min-width: 52%;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-right: 40px;
 }
 
 .pd-size {
@@ -791,4 +794,14 @@ body {
     background-size: contain;
     max-height: 270px;
     background-position: center;
+}
+
+.pd-size:hover {
+    background-color: aqua;
+}
+
+.fea-big-text2 {
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 30%;
 }
