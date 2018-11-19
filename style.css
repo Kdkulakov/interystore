@@ -26,9 +26,13 @@ body {
     flex-direction: column;
 }
 
+.content {
+        padding: 120px 98px 0px 98px;
+}
 .slider {
     max-height: 800px;
     position: relative;
+    background-image: url(img/slider-img.jpg);
 }
 
 .header {
@@ -208,7 +212,6 @@ body {
 
 .futured {
     height: 500px;
-    padding: 120px 98px 0px 98px;
 }
 
 .fea-links {
@@ -279,13 +282,15 @@ body {
 }
 
 .featured-big {
-    height: 683px;
+    min-height: 683px;
 }
 
 .fea-big-block {
     display: inline-flex;
     margin-left: -2px;
     margin-right: -2px;
+    min-width: 50%;
+    min-height: 683px;
 }
 
 .fea-big-block img {}
@@ -317,10 +322,7 @@ body {
 
 
 .treding {
-    padding-left: 98px;
-    padding-right: 98px;
-    padding-top: 119px;
-    padding-bottom: 120px;
+
 }
 
 .tren-pd {
@@ -363,6 +365,8 @@ body {
 .slider2 {
     height: 800px;
     position: relative;
+    background-image: url(img/slider.png);
+    background-position: center;
 }
 
 .slider2 .pagination {
@@ -381,8 +385,8 @@ body {
 }
 
 .acessuars {
-    padding: 120px 100px 120px 100px;
     display: flex;
+    min-height: 650px;
 }
 
 .acc-big img {
@@ -395,9 +399,10 @@ body {
 .ac-big {
     display: flex;
     flex-wrap: wrap;
-    height: 692px;
     flex-direction: column;
-    position: relative;
+    min-width: 45%;
+    background-image: url(img/product-1-lg.png);
+    background-repeat: no-repeat;
 }
 
 .acc-header-text {
@@ -464,6 +469,9 @@ body {
 
 .mobile {
     position: relative;
+    background-image: url(img/back-img.png);
+    background-position: center;
+    min-height: 515px;
 }
 
 .footer-links {
@@ -621,6 +629,12 @@ body {
 
 }
 
+@media screen and (max-width: 1200px){
+    .container {
+        max-width: 1200px;
+    }
+}
+
 
 .menu-list {
     text-decoration: none;
@@ -741,4 +755,40 @@ body {
 
 .thumb a::after:hover {
     background-color: aqua;
+}
+
+.fea-2img {
+    background-image: url(img/promo-img1.png);
+}
+
+.fea-3img {
+    background-image: url(img/promo-img.png);
+    background-position: center;
+}
+
+.pd1 {
+    background-image: url(img/product-2-sm.png);
+}
+
+.pd2 {
+    background-image: url(img/product-3-sm.png);
+}
+
+.pd3 {
+    background-image: url(img/product-4-sm.png);
+}
+
+.pd4 {
+    background-image: url(img/product-5-sm.png);
+}
+
+.acc-big {
+    min-width: 52%;
+}
+
+.pd-size {
+    min-width: 270px;
+    background-size: contain;
+    max-height: 270px;
+    background-position: center;
 }
