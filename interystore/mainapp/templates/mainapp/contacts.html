@@ -1,0 +1,50 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block title %}
+    {{ page_title|title }}
+{% endblock %}
+
+    {% block container %}
+        <div class="slider-head">
+            <div class="header  padding-site">
+                <a class="logo" href="/"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                <div>
+                    {% include 'mainapp/includes/inc__menu_top.html' %}
+                </div>
+
+            </div>
+            <div class="pd-head">
+                <h1>Contacts</h1>
+            </div>
+        </div>
+
+            <div class="contacts">
+            <div class="row">
+                <div class="cont-block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>COLIFORNIA</h3>
+                    <p class="pea"><span>Phone:<br /></span> <strong>1900-1234-5678</strong></p>
+                    <p class="pea"><span>Email:<br /></span><strong>info@interior.com</strong></p>
+                    <p class="pea"><span>Address:<br /></span>12 W 1st St. 90001 Los Angeles. Colifornia</p>
+                </div>
+                <div class="cont-block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>COLIFORNIA</h3>
+                    <p class="pea">Phone: <br /></span><strong>1900-1234-5678</strong></p>
+                    <p class="pea">Email: <br /></span><strong>info@interior.com</strong></p>
+                    <p class="pea">Address: <br />12 W 1st St. 90001 Los Angeles. Colifornia</p>
+                </div>
+                <div class="cont-block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>COLIFORNIA</h3>
+                    <p class="pea">Phone: <br /></span><strong>1900-1234-5678</strong></p>
+                    <p class="pea">Email: <br /></span><strong>info@interior.com</strong></p>
+                    <p class="pea">Address: <br />12 W 1st St. 90001 Los Angeles. Colifornia</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    {% endblock %}

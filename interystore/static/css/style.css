@@ -882,3 +882,35 @@ body {
     font-weight: 100;
     font-size: -webkit-xxx-large;
 }
+
+.contacts {
+    height: 500px;
+    position: relative;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cont-block {
+    width: 250px;
+    border: 1px solid black;
+    padding: 5%;
+    margin-right: 1%;
+    text-align: center;
+    line-height: 2;
+}
+
+.cont-block i {
+    font-size: 54px;
+}
+
+.pea {
+    line-height: 1;
+    margin-bottom: 15px;
+}
