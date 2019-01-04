@@ -1,0 +1,18 @@
+               {% load static %}
+                <ul class="menu">
+                    <li class="menu-list">
+                        <a href="{% url 'main' %}" class="menu-link
+                        {% if request.resolver_match.url_name == 'main' %}menu-link-active {% endif %}">HOME</a></li>
+                    <li class="menu-list">
+                        <a href="{% url 'products' %}" class="menu-link
+                        {% if request.resolver_match.url_name == 'products' %}menu-link-active {% endif %}">PRODUCTS</a></li>
+                    <li class="menu-list">
+                        <a href="#" class="menu-link">HISTORY</a></li>
+                    <li class="menu-list">
+                        <a href="#" class="menu-link">SHOWROOM</a></li>
+                    <li class="menu-list">
+                        <a href="{% url 'contacts' %}" class="menu-link
+                        {% if request.resolver_match.url_name == 'contacts' %}menu-link-active {% endif %}">CONTACT</a></li>
+                    <li class="search">
+                        <img src="{% static 'img/search%20(5).svg' %}" alt="search"></li>
+                </ul>

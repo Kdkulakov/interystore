@@ -37,11 +37,15 @@ body {
 .slider {
     max-height: 800px;
     position: relative;
-    background-image: url(img/slider-img.jpg);
+    background-color: #f5f5f5;
+    background-image: url(/static/img/slider-img.jpg);
 }
 
 .slider-head {
     background-position: 0px 540px;
+    max-height: 800px;
+    position: relative;
+    background-color: #f5f5f5;
 }
 .header {
     display: flex;
@@ -349,12 +353,14 @@ body {
 
 .treding {
     padding: 71px 0px 0px 98px;
+    margin-bottom: 150px;
 }
 
 .tren-pd {
     width: 370px;
     height: 370px;
     margin-bottom: 15px;
+    margin-right: 10px
 }
 
 .tren-pd:hover {
@@ -366,8 +372,6 @@ body {
     margin-top: 64px;
     display: flex;
     flex-wrap: wrap;
-    height: 780px;
-    flex-direction: column;
 }
 
 .tred-bord a:first-child {
@@ -391,7 +395,7 @@ body {
 .slider2 {
     height: 800px;
     position: relative;
-    background-image: url(img/slider.png);
+    background-image: url(/static/img/slider.png);
     background-position: center;
 }
 
@@ -425,7 +429,7 @@ body {
 .ac-big {
     position: relative;
     min-width: 45%;
-    background-image: url(img/product-1-lg.png);
+    background-image: url(/static/img/product-1-lg.png);
     background-repeat: no-repeat;
 }
 
@@ -493,7 +497,7 @@ body {
 
 .mobile {
     position: relative;
-    background-image: url(img/back-img.png);
+    background-image: url(/static/img/back-img.png);
     background-position: center;
     min-height: 515px;
 }
@@ -788,28 +792,28 @@ body {
 }
 
 .fea-2img {
-    background-image: url(img/promo-img1.png);
+    background-image: url(/static/img/promo-img1.png);
 }
 
 .fea-3img {
-    background-image: url(img/promo-img.png);
+    background-image: url(/static/img/promo-img.png);
     background-position: center;
 }
 
 .pd1 {
-    background-image: url(img/product-2-sm.png);
+    background-image: url(/static/img/product-2-sm.png);
 }
 
 .pd2 {
-    background-image: url(img/product-3-sm.png);
+    background-image: url(/static/img/product-3-sm.png);
 }
 
 .pd3 {
-    background-image: url(img/product-4-sm.png);
+    background-image: url(/static/img/product-4-sm.png);
 }
 
 .pd4 {
-    background-image: url(img/product-5-sm.png);
+    background-image: url(/static/img/product-5-sm.png);
 }
 
 .acc-big {
@@ -842,4 +846,39 @@ body {
 
     padding-left: 5%;
     padding-top: 30%;
+}
+
+.fea-links-pd ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.fea-links-pd ul li a {
+    color: #6c6c6c;
+    padding: 0px 22px 21px 3px;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.fea-links-pd ul li a:hover {
+    border-bottom: 1px solid;
+}
+
+.fea-links-pd ul li:first-child a {
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+    font-weight: 600;
+}
+
+.pd-head {
+    height: 200px;
+}
+
+.pd-head h1 {
+    position: absolute;
+    bottom: 0;
+    padding-left: 95px;
+    padding-bottom: 30px;
+    font-weight: 100;
+    font-size: -webkit-xxx-large;
 }

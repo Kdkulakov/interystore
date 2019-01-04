@@ -1,0 +1,74 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block title%}
+    Детали
+{% endblock %}
+
+    {% block container %}
+        <div class="slider slider-head">
+            <div class="header  padding-site">
+                <a class="logo" href="index.html"><img src="/static/img/logo.png" alt="logo"></a>
+                <div>
+                    {% include 'mainapp/includes/inc__menu_top.html' %}
+                </div>
+
+            </div>
+            <div class="menu-detail">
+                {% include 'mainapp/includes/inc__menu_products.html' %}
+            </div>
+        </div>
+        <div class="detail">
+            <div class="photo">
+                <img src="/static/img/slider1.png" alt="">
+                <div class="thumb">
+                    <a href="#"><img src="/static/img/controll.png" alt=""></a>
+                    <a href="#"><img src="/static/img/controll11.png" alt=""></a>
+                    <a href=""><img src="/static/img/controll2.png" alt=""></a>
+                </div>
+            </div>
+            <div class="detail-info">
+                <h2>Fishnet Chair</h2>
+                <h5>Hot deal</h5>
+                <div class="price"><span>$</span>36.7<span>/sq</span></div>
+                <a href="#" class="button redbtn">Order us&#62;</a>
+                <p>The majesty of Mountains - Ugmonk style.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+
+        </div>
+
+        <div class="treding">
+            <div class="fea-links tred-bord">
+                <p class="tred-a">Related Products</p>
+                <a href="#">Explore all<span>&#8250;</span></a>
+            </div>
+
+            <div class="tren-product">
+                <div class="tren-pd">
+                    <img src="/static/img/product-11.png" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+                    <img src="/static/img/product-41.png" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+
+                    <img src="/static/img/product-21.png" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+
+                    <img src="/static/img/product-5.png" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+
+                    <img src="/static/img/product-31.png" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+                    <img src="/static/img/product-6.png" alt="" class="" id="">
+                </div>
+
+            </div>
+        </div>
+
+        {% endblock %}

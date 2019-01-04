@@ -1,0 +1,95 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block title%}
+    Каталог
+{% endblock %}
+
+    {% block container %}
+        <div class="slider-head">
+            <div class="header  padding-site">
+                <a class="logo" href="/"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                <div>
+                    {% include 'mainapp/includes/inc__menu_top.html' %}
+                </div>
+
+            </div>
+            <div class="pd-head">
+                <h1>Our products</h1>
+            </div>
+        </div>
+        <div class="treding content">
+               <div class="fea-links-pd">
+                    {% include 'mainapp/includes/inc__menu_products.html' %}
+            </div>
+            <div class="tren-product">
+                <div class="tren-pd">
+                   <a href="/detail/">
+                       <img src="{% static 'img/product-11.png' %}" alt="" class="" id=""></a>
+                </div>
+                <div class="tren-pd">
+                   <a href="/detail/">
+                       <img src="{% static 'img/product-41.png' %}" alt="" class="" id=""></a>
+                </div>
+                <div class="tren-pd">
+                    <a href="/detail/">
+                        <img src="{% static 'img/product-21.png' %}" alt="" class="" id=""></a>
+                </div>
+                <div class="tren-pd">
+                    <a href="/detail/">
+                        <img src="{% static 'img/product-5.png' %}" alt="" class="" id=""></a>
+                </div>
+                <div class="tren-pd">
+                    <a href="/detail/">
+                        <img src="{% static 'img/product-31.png' %}" alt="" class="" id=""></a>
+                </div>
+                <div class="tren-pd">
+                   <a href="/detail/">
+                       <img src="{% static 'img/product-6.png' %}" alt="" class="" id=""></a>
+                </div>
+                <div class="tren-pd">
+                    <img src="{% static 'img/product-11.png' %}" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+                    <img src="{% static 'img/product-41.png' %}" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+
+                    <img src="{% static 'img/product-21.png' %}" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+
+                    <img src="{% static 'img/product-5.png' %}" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+
+                    <img src="{% static 'img/product-31.png' %}" alt="" class="" id="">
+                </div>
+                <div class="tren-pd">
+                    <img src="{% static 'img/product-6.png' %}" alt="" class="" id="">
+                </div>
+
+            </div>
+        </div>
+        <div class="featured-big">
+            <div class="fea-big-block fea-2img">
+
+                <div class="fea-big-text">
+                    <h3 class="slider-h3">EXCLUSIVE</h3>
+                    <h2 class="slider-h2 text-wu-tf">Fishnet Chair</h2>
+                    <p class="slider-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black</p>
+                    <a href="#" class="button">Order us<span>&#8250;</span></a>
+                </div>
+            </div>
+            <div class="fea-big-block fea-3img">
+
+                <div class="fea-big-text">
+                    <h3 class="slider-h3">EXCLUSIVE</h3>
+                    <h2 class="slider-h2 text-wu-tf">Fishnet Chair</h2>
+                    <p class="slider-text">Seat and back with upholstery made of cold cure foam. Steel frame, available in matt powder-coated black</p>
+                    <a href="#" class="button">Order us<span>&#8250;</span></a>
+                </div>
+            </div>
+
+        </div>
+
+    {% endblock %}
