@@ -1,9 +1,7 @@
 
                 <ul>
                     <li class="menu-list"><a href="#">ALL</a></li>
-                    <li class="menu-list"><a href="#">HOME</a></li>
-                    <li class="menu-list"><a href="#">OFFICE</a></li>
-                    <li class="menu-list"><a href="#">FURNITURE</a></li>
-                    <li class="menu-list"><a href="#">MODERN</a></li>
-                    <li class="menu-list"><a href="#">CLASSIC</a></li>
+                    {% for category in categories %}
+                    <li class="menu-list"><a href="#">{{ category.name }}</a></li>
+                    {% endfor %}
                 </ul>

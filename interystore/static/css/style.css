@@ -360,7 +360,13 @@ body {
     width: 370px;
     height: 370px;
     margin-bottom: 15px;
-    margin-right: 10px
+    margin-right: 10px;
+    text-align: center;
+}
+.tren-pd a img {
+    max-width: 370px;
+    object-fit: cover;
+    max-height: 370px;
 }
 
 .tren-pd:hover {

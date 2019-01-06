@@ -22,51 +22,13 @@
                     {% include 'mainapp/includes/inc__menu_products.html' %}
             </div>
             <div class="tren-product">
+                {% for product in products %}
                 <div class="tren-pd">
                    <a href="/detail/">
-                       <img src="{% static 'img/product-11.png' %}" alt="" class="" id=""></a>
+                       <img src="/media/{{ product.image|default:'product_images/default.jpeg'}}" alt="" class="" id=""></a>
                 </div>
-                <div class="tren-pd">
-                   <a href="/detail/">
-                       <img src="{% static 'img/product-41.png' %}" alt="" class="" id=""></a>
-                </div>
-                <div class="tren-pd">
-                    <a href="/detail/">
-                        <img src="{% static 'img/product-21.png' %}" alt="" class="" id=""></a>
-                </div>
-                <div class="tren-pd">
-                    <a href="/detail/">
-                        <img src="{% static 'img/product-5.png' %}" alt="" class="" id=""></a>
-                </div>
-                <div class="tren-pd">
-                    <a href="/detail/">
-                        <img src="{% static 'img/product-31.png' %}" alt="" class="" id=""></a>
-                </div>
-                <div class="tren-pd">
-                   <a href="/detail/">
-                       <img src="{% static 'img/product-6.png' %}" alt="" class="" id=""></a>
-                </div>
-                <div class="tren-pd">
-                    <img src="{% static 'img/product-11.png' %}" alt="" class="" id="">
-                </div>
-                <div class="tren-pd">
-                    <img src="{% static 'img/product-41.png' %}" alt="" class="" id="">
-                </div>
-                <div class="tren-pd">
 
-                    <img src="{% static 'img/product-21.png' %}" alt="" class="" id="">
-                </div>
-                <div class="tren-pd">
-
-                    <img src="{% static 'img/product-5.png' %}" alt="" class="" id="">
-                </div>
-                <div class="tren-pd">
-
-                    <img src="{% static 'img/product-31.png' %}" alt="" class="" id="">
-                </div>
-                <div class="tren-pd">
-                    <img src="{% static 'img/product-6.png' %}" alt="" class="" id="">
-                </div>
+                {% endfor %}
 
             </div>
         </div>
