@@ -8,11 +8,12 @@ def index(request):
     if request.user.is_authenticated:
         basket = request.user.basket_set.all()
 
+
     context = {
         'page_title': 'главная',
         'basket': basket,
     }
-    return render(request, 'basketapp/basket.html')
+    return render(request, 'basketapp/basket.html', context)
 
 
 def basket_add(request, product_pk):

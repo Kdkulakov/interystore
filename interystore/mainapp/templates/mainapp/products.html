@@ -24,7 +24,7 @@
             <div class="tren-product">
                 {% for product in products %}
                 <div class="tren-pd">
-                   <a href="/detail/">
+                   <a href="{% url 'basket:add' product.pk %}">
                        <img src="/media/{{ product.image|default:'product_images/default.jpeg'}}" alt="" class="" id=""></a>
                 </div>
 

@@ -5,6 +5,18 @@
     <title>Корзина</title>
 </head>
 <body>
+<table>
+<tr>
+    <th>Товар</th>
+    <th>Количество</th>
+</tr>
+{% for product in basket %}
 
+<tr>
+    <td>{{ product.product.name }}</td>
+    <td>{{ product.quantity }}</td>
+</tr>
+{% endfor %}
+</table>
 </body>
 </html>

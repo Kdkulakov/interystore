@@ -6,9 +6,10 @@ def main(request):
     basket = []
     if request.user.is_authenticated:
         basket = request.user.basket_set.all()
-
+    products = Product.objects.filter(category__name='classic')[:3]
     context = {
         'page_title': 'магазин',
+        'products': products,
     }
     return render(request, 'mainapp/index.html', context)
 

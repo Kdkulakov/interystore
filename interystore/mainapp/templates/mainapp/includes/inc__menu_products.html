@@ -1,6 +1,10 @@
 
                 <ul>
-                    <li class="menu-list">
+                    <li class="{% if request.resolver_match.args.0 == '0' %}
+                       menu-list  menu-link-active
+                       {% else %}
+                       menu-list
+                    {% endif %}">
                         <a href="{% url 'main:catalog' 0 %}">ALL</a>
                     </li>
                     {% for category in categories %}

@@ -11,7 +11,7 @@ footer {
     margin-top: -5px;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .content {
-    padding: 120px 98px 0px 98px;
+    padding: 120px 98px 98px 98px;
 }
 
 .slider {
@@ -88,10 +88,11 @@ body {
     margin-left: 80px;
 }
 
-.menu-link-active {
+.menu-link-active a {
     color: #212121;
-    font-weight: 700;
-    border-bottom: 3px solid #212121;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+    font-weight: 600;
 }
 
 .slider-h3 {
@@ -231,7 +232,7 @@ body {
 
 
 .futured {
-    height: 500px;
+    height: 658px;
 }
 
 .fea-links {
@@ -255,8 +256,7 @@ body {
 .fea-pd {
 
     background-color: #ffffff;
-    width: 270px;
-    height: 270px;
+    position: relative;
 }
 
 
@@ -281,15 +281,18 @@ body {
 }
 
 .fea-pd-control {
-    width: 270px;
+    width: 100%;
     position: absolute;
     text-align: -webkit-center;
     display: none;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
     border: 1px solid #9c9c9c;
     z-index: -1;
 }
 
+.fea-pd img {
+    max-width: 95%;
+}
 .fea-pd:hover > .fea-pd-control {
     display: inline-grid;
     z-index: 2;
@@ -367,7 +370,7 @@ body {
 }
 .tren-pd a img {
     width: 100%;
-    object-fit: fill;
+    object-fit: contain;
     height: 100%;
 }
 
@@ -424,7 +427,7 @@ body {
 
 .acessuars {
     display: flex;
-    min-height: 650px;
+    min-height: 770px;
 }
 
 .acc-big img {
@@ -565,8 +568,9 @@ body {
 .col-2 {}
 
 .col-3 {
-    width: 40%;
+    width: none;
     text-align: -webkit-center;
+    max-width: 70%;
 }
 
 .col-3 a i {
@@ -627,7 +631,7 @@ body {
 
 .block-header {
     height: 13px;
-    padding-bottom: 24px;
+    margin-bottom: 50px;
 }
 
 .link-w {
@@ -647,7 +651,7 @@ body {
 .subcrib {
     position: absolute;
     margin-top: -37px;
-    right: 15px;
+    right: 30px;
 }
 
 .fa-telegram-plane:hover {
@@ -702,9 +706,7 @@ body {
     margin-right: 10px;
 }
 
-.menu-list:first-child a {
-    color: #212121;
-}
+
 
 .menu-detail ul li a:hover {
     color: #212121;
@@ -865,18 +867,13 @@ body {
     color: #6c6c6c;
     padding: 0px 22px 21px 3px;
     font-size: 23px;
-    font-weight: 400;
 }
 
 .fea-links-pd ul li a:hover {
     border-bottom: 1px solid;
 }
 
-.fea-links-pd ul li:first-child a {
-    padding-bottom: 20px;
-    border-bottom: 2px solid;
-    font-weight: 600;
-}
+
 
 .pd-head {
     height: 200px;
@@ -901,12 +898,12 @@ body {
 
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
 .cont-block {
-    width: 250px;
+    width: 25%;
     border: 1px solid black;
     padding: 5%;
     margin-right: 1%;
