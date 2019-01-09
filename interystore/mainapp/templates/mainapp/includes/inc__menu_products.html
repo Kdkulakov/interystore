@@ -1,7 +1,16 @@
 
                 <ul>
-                    <li class="menu-list"><a href="#">ALL</a></li>
+                    <li class="menu-list">
+                        <a href="{% url 'main:catalog' 0 %}">ALL</a>
+                    </li>
                     {% for category in categories %}
-                    <li class="menu-list"><a href="#">{{ category.name }}</a></li>
+
+                    <li class="{% if request.resolver_match.args.0|add:0 == category.pk %}
+                       menu-list  menu-link-active
+                       {% else %}
+                       menu-list
+                    {% endif %}">
+                        <a href="{% url 'main:catalog' category.pk %}">{{ category.name }}</a>
+                    </li>
                     {% endfor %}
                 </ul>

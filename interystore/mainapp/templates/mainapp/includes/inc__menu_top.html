@@ -7,12 +7,37 @@
                         <a href="{% url 'main:products' %}" class="menu-link
                         {% if request.resolver_match.url_name == 'products' %}menu-link-active {% endif %}">PRODUCTS</a></li>
                     <li class="menu-list">
-                        <a href="#" class="menu-link">HISTORY</a></li>
-                    <li class="menu-list">
-                        <a href="#" class="menu-link">SHOWROOM</a></li>
-                    <li class="menu-list">
                         <a href="{% url 'main:contacts' %}" class="menu-link
                         {% if request.resolver_match.url_name == 'contacts' %}menu-link-active {% endif %}">CONTACT</a></li>
+
+                    <li class="menu-list">
+                        {% if user.is_authenticated %}
+                            <a href="{% url 'auth:logout' %}" class="menu-link
+                        {% if request.resolver_match.url_name == 'logout' %}menu-link-active {% endif %}">выйти</a>
+                        {% else %}
+                            <a href="{% url 'auth:login' %}" class="menu-link
+                        {% if request.resolver_match.url_name == 'login' %}menu-link-active {% endif %}">войти</a>
+                        {% endif %}
+                    </li>
+                    <li class="menu-list user-name ">
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'auth:update' %}">
+                            {{ user.first_name|default:'Пользователь' }}
+                            </a>
+                        {% endif %}
+                    </li>
                     <li class="search">
-                        <img src="{% static 'img/search%20(5).svg' %}" alt="search"></li>
+                        <img src="{% static 'img/search%20(5).svg' %}" alt="search">
+                    </li>
+                    <li class="search">
+                        <a href="{% url 'basket:index' %}">
+
+                            {% if request.user.basket_set.all %}
+
+                                <i class="fa fa-shopping-cart"></i>
+                                {{ request.user.basket_set.all|length }} шт.
+
+                            {% endif %}
+                        </a>
+                    </li>
                 </ul>

@@ -1,29 +1,62 @@
 from django.shortcuts import render
 from mainapp.models import ProductCategory, Product
 
+
 def main(request):
+    basket = []
+    if request.user.is_authenticated:
+        basket = request.user.basket_set.all()
+
     context = {
         'page_title': 'магазин',
     }
     return render(request, 'mainapp/index.html', context)
 
-def products(request):
-    products = Product.objects.all()
+
+def products(request, category_pk=None):
+    basket = []
+    if request.user.is_authenticated:
+        basket = request.user.basket_set.all()
+
     categories = ProductCategory.objects.all()
-    context = {
-        'page_title': 'каталог',
-        'products': products,
-        'categories': categories,
-    }
-    return render(request, 'mainapp/products.html', context)
+    if category_pk:
+        if category_pk == '0':
+            products = Product.objects.all()
+        else:
+            products = Product.objects.filter(category__pk=category_pk)
+        context = {
+            'page_title': 'каталог',
+            'products': products,
+            'categories': categories,
+        }
+        return render(request, 'mainapp/products_list.html', context)
+    else:
+        categories = ProductCategory.objects.all()
+        products = Product.objects.all()
+        context = {
+            'page_title': 'каталог',
+            'products': products,
+            'categories': categories,
+        }
+        return render(request, 'mainapp/products.html', context)
+
 
 def detail(request):
+    basket = []
+    if request.user.is_authenticated:
+        basket = request.user.basket_set.all()
+
     context = {
         'page_title': 'детали',
     }
     return render(request, 'mainapp/detail.html', context)
 
+
 def contacts(request):
+    basket = []
+    if request.user.is_authenticated:
+        basket = request.user.basket_set.all()
+
     locations = [
         {
             'city': 'COLIFORNIA',

@@ -28,6 +28,7 @@ body {
     box-shadow: 0px 0px 2px 0px grey;
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 .content {
@@ -84,6 +85,7 @@ body {
 .search {
     align-items: center;
     display: flex;
+    margin-left: 80px;
 }
 
 .menu-link-active {
@@ -364,9 +366,9 @@ body {
     text-align: center;
 }
 .tren-pd a img {
-    max-width: 370px;
-    object-fit: cover;
-    max-height: 370px;
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
 }
 
 .tren-pd:hover {
@@ -919,4 +921,19 @@ body {
 .pea {
     line-height: 1;
     margin-bottom: 15px;
+}
+
+.login {
+    min-height: 400px;
+    text-align: -webkit-center;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.user-name {
+    margin-left: -70px;
+    margin-top: -15px;
+    text-decoration: underline;
 }

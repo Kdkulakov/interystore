@@ -1,0 +1,32 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block title %}
+    {{ page_title|title }}
+{% endblock %}
+
+    {% block container %}
+        <div class="slider-head">
+            <div class="header  padding-site">
+                <a class="logo" href="/"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                <div>
+                    {% include 'mainapp/includes/inc__menu_top.html' %}
+                </div>
+
+            </div>
+            <div class="pd-head">
+                <h1>Вход пользователя</h1>
+            </div>
+        </div>
+
+            <div class="login">
+
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="Войти" class="btn btn-primary">
+
+                </form>
+                <a href="{% url 'auth:register' %}" class="btn btn-round from-control">зарегистрироваться</a>
+            </div>
+
+    {% endblock %}

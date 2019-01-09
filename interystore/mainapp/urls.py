@@ -9,6 +9,7 @@ urlpatterns = [
     re_path(r'^$', main, name='main'),
     re_path(r'^detail/$', detail, name='detail'),
     re_path(r'^products/$', products, name='products'),
+    re_path(r'^catalog/category/(\d+)/$', products, name='catalog'),
     re_path(r'^contacts/$', contacts, name='contacts'),
 ]
 
