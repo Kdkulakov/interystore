@@ -22,7 +22,7 @@
                     {% include 'mainapp/includes/inc__menu_products.html' %}
             </div>
             <div class="tren-product">
-                {% for product in products %}
+                {% for product in same_products %}
                 <div class="tren-pd">
                    <a href="{% url 'basket:add' product.pk %}">
                        <img src="/media/{{ product.image|default:'product_images/default.jpeg'}}" alt="" class="" id=""></a>

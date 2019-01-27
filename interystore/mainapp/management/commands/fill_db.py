@@ -21,25 +21,25 @@ class Command(BaseCommand):
     help = 'Fill DB new DATA'
 
     def handle(self, *args, **options):
-        categories = load_form_json('categories')
-
-        ProductCategory.objects.all().delete()
-        for category in categories:
-            new_category = ProductCategory(**category)
-            new_category.save()
-
-        products = load_form_json('products')
-
-        Product.objects.all().delete()
-        for product in products:
-            category_name = product["category"]
-
-            #получаем категории по имени
-            _category = ProductCategory.objects.get(name=category_name)
-            #Заменяем название категории объектом
-            product['category'] = _category
-            new_product = Product(**product)
-            new_product.save()
+        # categories = load_form_json('categories')
+        #
+        # ProductCategory.objects.all().delete()
+        # for category in categories:
+        #     new_category = ProductCategory(**category)
+        #     new_category.save()
+        #
+        # products = load_form_json('products')
+        #
+        # Product.objects.all().delete()
+        # for product in products:
+        #     category_name = product["category"]
+        #
+        #     #получаем категории по имени
+        #     _category = ProductCategory.objects.get(name=category_name)
+        #     #Заменяем название категории объектом
+        #     product['category'] = _category
+        #     new_product = Product(**product)
+        #     new_product.save()
 
 
         # создаем суперпользователя при помощи модели

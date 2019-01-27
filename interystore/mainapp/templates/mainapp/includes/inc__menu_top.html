@@ -30,14 +30,16 @@
                         <img src="{% static 'img/search%20(5).svg' %}" alt="search">
                     </li>
                     <li class="search">
-                        <a href="{% url 'basket:index' %}">
 
-                            {% if request.user.basket_set.all %}
-
+                            {% if basket %}
+                                <a href="{% url 'basket:index' %}">
                                 <i class="fa fa-shopping-cart"></i>
-                                {{ request.user.basket_set.all|length }} шт.
+                                    <span>
 
+                                    {{ basket.0.total_cost|floatformat:0 }} $.
+                                    ({{ basket.0.total_quantity }}) itm.
+                                    </span>
+                                </a>
                             {% endif %}
-                        </a>
                     </li>
                 </ul>

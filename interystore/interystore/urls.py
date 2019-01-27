@@ -23,3 +23,4 @@ urlpatterns = [
     re_path(r'^basket/', include('basketapp.urls', namespace='basket')),
     path('admin/', admin.site.urls),
 ]
+
